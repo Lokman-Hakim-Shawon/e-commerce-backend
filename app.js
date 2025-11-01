@@ -2,6 +2,7 @@ const express=require('express')
 const cors=require('cors')
 const app=express()
 const productRouter=require('./router/Product.route')
+require('./config/db')
 
 app.use(express.json())
 app.use(cors())
