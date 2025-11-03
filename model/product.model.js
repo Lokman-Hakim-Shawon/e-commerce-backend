@@ -10,7 +10,7 @@ const productSchema=mongoose.Schema({
         required:true
     },
     Price:{
-        type:Number,
+        type:String,
         required:true
     },
     Category:{

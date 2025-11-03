@@ -38,7 +38,7 @@ const updateProduct=(req,res)=>{
 }
 const deleteProduct=async(req,res)=>{
     try {
-        const deleteData= await Product.deleteOne({id:req.body._id})
+        const deleteData= await Product.deleteOne(req.params._id)
         res.status(200).json({message:'delete data'})
     } catch (error) {
         res.status(500).json({message:error.message})
